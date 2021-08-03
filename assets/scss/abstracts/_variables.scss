@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Ubuntu:wght@400;700&display=swap');
+
+//fuentes
+$primary-font: 'Ubuntu', sans-serif;
+$secondary-font: 'Poppins', sans-serif;
+
+$regular-font: 400;
+$bold-font: 700;
+
+$x-small: 0.75rem;
+$small: 0.875rem;
+$medium: 1rem;
+$large: 1.25rem;
+$x-large: 1.875rem;
+$xx-large: 2,1875rem;
+$xxx-large: 2.5rem;
+$xxxx-large: 2,8125rem;
+$xxxxx-large: 3,125rem;
+
+//breakpoints
+$bp-sm: 576px;
+$bp-md: 768px;
+$bp-lg: 992px;
+$bp-xl: 1200px;
+
+//colores
+$white: #fff;
+$black: #000;
+$sable: #060606;
+$charcoal: #2e1503;
+$tangerine: #ffaf6d;
+$orange: #ffa500;

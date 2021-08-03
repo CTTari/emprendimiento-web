@@ -1,0 +1,43 @@
+.navigation {
+    background-color: $black;
+    color: $white;
+
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__logo {
+        width: 2.5rem;
+        padding: 0.5rem 0;
+    }
+
+    &__menu {
+        list-style: none;
+
+        li {
+            display: inline-block;
+        }
+    }
+
+    &__item{
+        display: none;
+
+        @include respond-to($bp-md) {
+        display: initial;
+        color: $white;
+        font-family: $secondary-font;
+        font-weight: $bold-font;
+        font-size: $small;
+        text-decoration: none;
+        padding-left: 0.75rem;
+        }    
+    }
+
+    &__icon {
+        @include respond-to($bp-md) {
+            display: none;
+        }        
+    }
+}

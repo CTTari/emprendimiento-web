@@ -1,0 +1,210 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    width: 100%;
+
+    @include respond-to($bp-md) {
+        width: 75%;
+        margin: 0 auto;
+    }
+
+    @include respond-to($bp-lg) {
+        width: 50%;
+    }
+}
+
+.main {
+    font-family: $primary-font;
+
+    &__cursos {
+        border: 1px solid $black;
+        padding: 0.75rem 0.5rem;
+        margin-bottom: 0.75rem;
+
+        @include respond-to($bp-md) {
+            padding: 1.25rem 1rem 0.25rem 1rem;
+            margin: 0 auto 1rem auto;
+            width: 88%;
+        }
+
+        @include respond-to($bp-lg) {
+            width: 92%;
+        }
+    }
+
+    &__curso {
+        border: 1px dotted $black;
+        padding: 0.5rem;
+        margin-bottom: 0.5rem;        
+    }
+
+    &__title {
+        font-size: $medium;
+    }
+
+    &__instructor {
+        font-size: $small;
+    }
+
+    &__text {
+        font-size: $small;
+        text-align: justify;
+    }
+
+    &__image {
+        width: 100%;
+        height: auto;
+    }
+
+    &__instructor {
+        margin-bottom: 0;
+    }
+
+    &__icons {        
+
+        p {
+            font-size: $small;
+            padding-right: 1rem;
+            margin-bottom: 0;
+            display: inline-block;            
+        }
+    }      
+}
+
+.about-us {
+    border: 1px solid $sable;
+    padding: 0.75rem 0.5rem;
+    margin-bottom: 0.75rem;
+
+    @include respond-to($bp-md) {
+        width: 88%;
+        padding: 1.25rem 1rem 8.5rem 1rem;
+        margin: 0 auto 1rem auto;
+    }
+
+    @include respond-to($bp-lg) {
+        width: 92%;
+        padding-bottom: 7rem;
+        margin: 0 auto 1rem auto;
+    }
+
+     &__image {
+        display: block;
+        margin: 0 auto;
+        width: 75%;
+        border: 0.75px solid $sable;
+        border-radius: 50%;
+
+        @include respond-to($bp-md) {
+            width: 25%;
+        }
+    }
+
+     &__title {
+        font-size: $medium;
+        font-weight: $bold-font;
+        text-align: center;
+    }
+
+     &__text {
+        font-size: $small;
+        text-align: justify;
+    }
+
+     &__courses {
+        font-family: $secondary-font;
+        font-size: $medium;
+        color: $white;
+        background-color: $sable;
+        text-align: center;
+    }
+
+    &__list {
+        padding-left: inherit;
+        font-family: $secondary-font;
+        font-size: $small;
+        list-style-type: circle;
+        text-align: left;
+    }
+
+    &__item { 
+        text-decoration: none;
+    }
+
+    &__animation {
+        display: block;
+        margin: 0 auto;
+        width: 75%;
+
+        @include respond-to($bp-md) {
+            width: 40%;
+        }
+    }
+
+    &__tag {
+        animation: mover 3s linear normal infinite;
+    }
+
+    &__tuerca-1 {
+        transform-origin: 79.25% 79.25%;
+        animation: rotar 4.5s linear infinite;
+        
+    }
+    
+    &__tuerca-2 {
+        transform-origin: 79.25% 79.25%;
+        animation: rotar 4.5s linear infinite;
+    }    
+}
+
+.footer {
+    color: $white;
+    background-color: $black;
+    font-family: $secondary-font;
+    font-size: $small;
+    font-weight: $regular-font;
+    padding: 1rem 0; 
+
+    @include respond-to($bp-lg) {
+        padding: 0.5rem 0;
+    }
+
+    &__row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        @include respond-to($bp-md) {
+            flex-direction: row;
+        }
+    }
+
+    &__rights {
+        margin: 0 auto;
+    }
+    
+    &__menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+
+        @include respond-to($bp-lg) {
+            flex-direction: row;
+        }
+    }
+
+    &__item {
+        margin: 0.5rem 0;
+
+        @include respond-to($bp-lg) {
+            margin: 0 1.5rem;
+        }        
+    }
+}

@@ -1,0 +1,12 @@
+.button {
+    font-family: $secondary-font;
+    font-weight: $regular-font;
+    font-size: $x-small;
+    background-color: $tangerine;
+    border-radius: 12.5%;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $white;
+    }
+}
