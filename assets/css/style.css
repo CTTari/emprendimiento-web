@@ -519,7 +519,7 @@ body {
 }
 @media (min-width: 992px) {
   .footer {
-    padding: 0.5rem 0;
+    padding: 1rem 0;
   }
 }
 .footer__row {
